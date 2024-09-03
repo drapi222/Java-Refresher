@@ -49,9 +49,7 @@ Notes:
 - The contact list is stored in an `ArrayList` during runtime and is not persistent. Once the program exits, the contact list will be cleared. Future enhancements could include saving the contact data to a file or database for persistence.
 
 Author:
--------
-[Your Name]
+Kevin
 
 Date:
------
-[Current Date]
+September 2, 2024
