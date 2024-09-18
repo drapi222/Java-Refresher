@@ -1,55 +1,31 @@
-# Java-Refresher
-
-Contact Manager Program
-=======================
-
-Description:
-------------
-The Contact Manager program is a simple Java-based application that allows users to manage a list of contacts. Users can add new contacts, view all existing contacts, search for a specific contact, edit contact details, and delete contacts. The program runs in a console environment, providing a text-based menu for user interaction.
+Overview
+The Contact Manager is a simple Java console application for managing contacts. It allows users to add, view, search, edit, and delete contacts, and supports saving/loading contacts to/from a file. The app also includes optional runtime performance reporting.
 
 Features:
----------
-1. **Add Contact**: Users can add a new contact by providing a name, phone number, and email address.
-2. **View Contacts**: Users can view all the contacts that have been added to the system.
-3. **Search Contact**: Users can search for a contact by name and display the contact's details.
-4. **Edit Contact**: Users can update the phone number and email of an existing contact.
-5. **Delete Contact**: Users can remove a contact from the system by name.
-6. **Exit**: Users can exit the program.
 
-Requirements:
--------------
-- Java Development Kit (JDK) installed
-- Any IDE or text editor that supports Java (e.g., IntelliJ IDEA, Eclipse, VS Code)
+- Add Contact: Add new contacts with name, phone, email, and optional details like social media.
+- View Contacts: Display all contacts in the list.
+- Search Contact: Search for a contact by name.
+- Edit Contact: Update contact details (phone, email, etc.).
+- Remove Contact: Delete a contact by name.
+- Save/Load Contacts: Save and load contacts from a CSV file.
+- Runtime Reporting: Track the time taken for operations.
 
-How to Run:
------------
-1. Compile the program:
-   - Open your terminal or command prompt.
-   - Navigate to the directory where your Java files are stored.
-   - Run the following command to compile the program:
-     ```
-     javac ContactMaker.java
-     ```
+Run the application with optional flags:
 
-2. Run the program:
-   - After compiling, run the program by executing the following command:
-     ```
-     java ContactMaker
-     ```
+- -v : Enable verbose mode for additional details.
+- -a <filename> : Load contacts from a specified file.
+- -O <filename> : Enable runtime reporting and specify the report file.
 
-3. Follow the on-screen menu to manage your contacts.
+Example:
+java ContactMakers -v -a AddressBookSample10.txt -O runtime.txt
 
-Class Descriptions:
--------------------
-- **ContactMaker**: This is the main class responsible for presenting the menu to the user and handling user interactions for adding, viewing, searching, editing, and deleting contacts.
-- **Contact**: This class represents a contact with three fields: name, phone number, and email. It includes getters and setters to access and modify the contact details.
+Custom Exceptions:
 
-Notes:
-------
-- The contact list is stored in an `ArrayList` during runtime and is not persistent. Once the program exits, the contact list will be cleared. Future enhancements could include saving the contact data to a file or database for persistence.
+- AddressBookEmptyException: Thrown when trying to view/edit an empty address book.
+- ContactNotFoundException: Thrown when the specified contact is not found.
+- InvalidFileFormatException: Thrown when the contact file has an invalid format.
 
-Author:
-Kevin
 
-Date:
-September 2, 2024
+Author: Kevin,
+Date: September 2, 2024

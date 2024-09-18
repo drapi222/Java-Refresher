@@ -1,0 +1,10 @@
+Adding contact took 43314 ms
+Adding contact took 32539 ms
+Adding contact took 29909 ms
+Adding contact took 22529 ms
+View Contact took 15 ms
+View Contact took 19 ms
+View Contact took 18 ms
+Searching Contact took 6366 ms
+Removing Contact took 3979 ms
+View Contact took 1 ms
